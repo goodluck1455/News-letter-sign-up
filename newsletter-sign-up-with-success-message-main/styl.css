@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+:root {
+    /**************************** 
+        Primary colors 
+    *****************************/
+    --Tomato: rgb(255, 98, 87);
+
+    /**************************** 
+            Neutral colors 
+     *****************************/
+     --DarkSlate-Grey: hsl(234, 29%, 20%);
+     --Charcoal-Grey: hsl(235, 18%, 26%);
+     --Grey: hsl(231, 7%, 60%);
+     --White: hsl(0, 0%, 100%);
+}
+
+
+
+@font-face {
+    font-family: "Roboto-Bold";
+    font-weight: 400;
+    src: url("assets/fonts/Roboto-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url("assets/fonts/Roboto-Regular.ttf");
+    font-weight: 500;
+  }
+ 
+
+
+
+body{
+    background-color: var(--DarkSlate-Grey);
+}
+
+
+
+.mainComponent{
+  margin-top: 2rem;
+    background-color: var(--White);
+    display: flex;
+    /* height: 90%; */
+    /* padding: 10px; */
+    width: 48%;
+   display: block;
+    align-items: center; 
+    /* height: 50rem; */
+    border-radius: 25px;
+}
+
+.contentSection{
+    display: flex;
+    padding: 10px;
+    /* gap: 20px; */
+}
+
+.updateContent{
+      
+    margin-left: 1rem;
+    width: 85%;
+}
+
+.updateContent p{
+    color: var(--DarkSlate-Grey);
+    /* font-family: "Roboto-Bold"; */
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+}
+
+.updateContent h4{
+    margin-top: 3rem;
+color: var(--DarkSlate-Grey);
+font-size: 35px;
+font-weight: 500;
+font-family: "Roboto-Bold";
+}
+
+
+
+
+.MainImage img{
+    width: 108%;
+    /* height: 30%; */
+    background-size: contain;
+    justify-items:right;
+    padding: 10px;
+    /* margin-right: -8.5rem; */
+    margin-left: 0.5rem;
+}
+
+ .MainImageB img{
+        display: none;
+    }
+
+/*-----------------------------
+    Ul listing content
+-------------------------------*/
+
+
+
+.list-A, .list-B, .list-C{
+    display: flex;
+    gap: 8px;
+    line-height: 7px;
+}
+
+.list-A p, .list-B p, .list-C p{
+    margin-top: 4px;
+}
+
+.list-A img, .list-B img,.list-C img{
+    width: 90%;
+}
+
+
+
+
+.SignupForm{
+margin-top: 8px;
+}
+
+.SignupForm label{
+    /* font-size: 12px; */
+    font-family: "Roboto-Regular";
+}
+
+
+.SignupForm button{
+    width: 100%;
+    margin-top: 10px;
+color: white;
+transition: background-color 0.3s ease-in-out;
+    background-color: var(--DarkSlate-Grey);
+}
+
+
+.SignupForm button:hover{
+    /* background: linear-gradient(to right, rgb(255, 98, 87), rgba(255, 98, 87, 0.2)); */
+    /* backdrop-filter: blur(20px); */
+    cursor: pointer;
+    background:linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%);
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  
+}
+
+.red-placeholder::placeholder{
+    /* background-color: var(--Tomato); */
+color: var(--Tomato);
+}
+
+.validation{
+    display: none;
+    font-size: 12px;
+    color: var(--Tomato);
+    font-family: "Roboto-Bold";
+    transition: background-color 0.3s ease-in-out;
+   /* margin-left: 1rem; */
+   float: right;
+}
+
+
+/*-------------------------------------------
+css of successful state begins here
+----------------------------------------------*/
+
+.mainComponent-B{
+    margin-top: 8rem;
+      background-color: var(--White);
+      /* display: flex; */
+      /* height: 90%; */
+      padding: 10px;
+      width: 28%;
+     display: none;
+     
+      height: 22rem;
+      border-radius: 25px;
+  }
+
+
+
+  .updateContent-B{
+    /* margin-top: 4rem; */
+    padding: 10px;
+    align-items: center;
+    margin-left: 1rem;
+    width: 85%;
+}
+
+.updateContent-B p{
+    color: var(--DarkSlate-Grey);
+    font-family: "Roboto-Regular";
+    /* font-weight: 400; */
+    font-size: 12.5px;
+    /* width: 100%; */
+}
+
+.contentMargin{
+padding-top: 1rem;
+   width: 14%;
+   margin-bottom: 14px;
+   /* font-size: 14px; */
+
+}
+
+.updateContent-B h4{
+    /* margin-top: 3rem; */
+color: var(--DarkSlate-Grey);
+font-size: 35px;
+font-weight: 500;
+font-family: "Roboto-Bold";
+}
+
+.SignupForm-B button{
+    width: 100%;
+    margin-top: 10px;
+color: white;
+transition: background-color 0.3s ease-in-out;
+    background-color: var(--DarkSlate-Grey);
+}
+
+.SignupForm-B button:hover{
+    /* background: linear-gradient(to right, rgb(255, 98, 87), rgba(255, 98, 87, 0.2)); */
+    /* backdrop-filter: blur(20px); */
+    cursor: pointer;
+    background:linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%);
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  
+}
+
+.emailCollection{
+    font-weight: bold;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 4rem;  color: var(--White);}
+.attribution a {  text-decoration: none;color: var(--White); font-weight: 400;}
+
+
+
+ /******************************************
+          All media queries begins here
+  ********************************************/
+
+
+
+
+  /******************************************
+  CCS media queries  width 1280PX
+  ********************************************/
+  @media screen and (max-width:1280px){
+    .mainComponent { width: 54%; }
+    .mainComponent-B{height: 24rem;}
+    .contentMargin {width: 22%;}
+
+
+
+  }
+
+
+
+
+
+
+/******************************************
+  CCS media queries  width 1024PX
+  ********************************************/
+  @media screen and (max-width:1024px){
+    .mainComponent { width: 69%;}
+
+    .mainComponent-B { width: 31%;}
+
+    .contentMargin {width: 25%;}
+
+  }
+
+
+/******************************************
+  CCS media queries  width 912PX
+  ********************************************/
+  @media screen and (max-width:912px){
+    .mainComponent {width: 70%;}
+
+    .mainComponent-B {width: 35%;}
+  }
+
+
+
+/******************************************
+  CCS media queries  width 820PX
+  ********************************************/
+  @media screen and (max-width:820px){
+    .mainComponent {width: 79%;}
+    .mainComponent-B {width: 37%;}}
+
+
+/******************************************
+  CCS media queries  width 768PX
+  ********************************************/
+  @media screen and (max-width:768px){
+
+    .mainComponent {width: 84%;}
+    .mainComponent-B {width: 40%;}
+
+  }
+
+
+
+/******************************************
+  CCS media queries  width 540PX
+  ********************************************/
+  @media screen and (max-width:540px){
+    .mainComponent {
+        width: 80%;
+        height: 50rem;
+        overflow: hidden;
+    }
+
+    .mainComponent-B {
+        width: 59%;
+    }
+
+    .MainImage img{
+        display: none;
+    }
+
+    .MainImageB img{
+        display: block;
+        margin-left: -1.5rem;
+     margin-right: 0rem; 
+     background-size: contain;
+     width: 112%;
+    }
+
+    .contentSection {
+        display: flex;
+        padding: 0px;
+        flex-direction: column-reverse;
+    }
+
+    .SignupForm {
+        margin-top: 30px;
+    }
+
+    .updateContent p { font-size: 17px;}
+
+    .list-A, .list-B, .list-C{
+         
+        line-height: 18px;
+    }
+
+    .validation {font-size: 16px;}
+    .SignupForm label {font-size: 17px;}
+
+  }
+
+
+/******************************************
+  CCS media queries  width 430PX
+  ********************************************/
+  @media screen and (max-width:430px){
+    .mainComponent { width: 100%; margin-top: 0rem; border-radius: 0px;}
+    body{background: white;}
+
+
+    
+
+       
+        .attribution {display: none;}
+
+  }
+
+
+
+ /******************************************
+  CCS media queries  width 414PX
+  ********************************************/
+  @media screen and (max-width:414px){
+
+    .MainImage img{
+        display: none;
+    }
+
+    .MainImageB img{
+        display: block;
+        margin-left: -1.5rem;
+     margin-right: 0rem; 
+     background-size: contain;
+    }
+
+    .contentSection {
+        display: flex;
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .mainComponent{
+        width: 100%;
+        margin-top: -1rem;
+    }
+
+    .updateContent p{
+        font-family: "Roboto-Regular";
+        line-height: 25px;
+        font-size: 16px;
+        color: var(--DarkSlate-Grey);
+     }
+
+
+     .updateContent-B {
+        margin-top: 6rem;}
+ 
+     .list-A, .list-B, .list-C{
+         
+         line-height: 10px;
+     }
+     .list-A p, .list-B p, .list-C p{
+         margin-top: -4px;
+     }
+
+     body{
+        background-color: white;
+     }
+
+
+     .mainComponent-B {
+        margin-top: 0rem;
+        padding: 0px;
+        width: 100%;
+        
+    }
+
+    .SignupForm-B button {
+        width: 100%;
+        margin-top: 8rem;}
+
+        .contentMargin {width: 22%;}
+        .attribution {display: none;}
+
+
+  }
+
+
+
+
+
+
+  /******************************************
+  CCS media queries  width 375PX
+  ********************************************/
+  @media screen and (max-width:375px){
+
+    .MainImage img{
+        display: none;
+    }
+
+    .MainImageB img{
+        display: block;
+        margin-left: -1.5rem;
+     margin-right: 0rem; 
+     background-size: contain;
+     /* width: 108%; */
+   
+    }
+
+    .updateContent p{
+       line-height: 25px;
+    }
+
+    .list-A, .list-B, .list-C{
+        
+        line-height: 10px;
+    }
+    .list-A p, .list-B p, .list-C p{
+        margin-top: -4px;
+    }
+
+    .mainComponent{
+        width: 100%;
+        margin-top: -1rem;
+    }
+
+ body{
+    background-color: white;
+ }
+
+    .contentSection {
+        display: flex;
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+
+
+      .mainComponent-B {
+        margin-top: 0rem;
+        padding: 0px;
+        width: 100%;
+        
+    }
+
+    .updateContent-B {
+        margin-top: 5rem;}
+
+        .contentMargin {width: 24%;}
+
+        .updateContent-B p {font-size: 14px;}
+
+
+        .SignupForm-B button {margin-top: 10rem}
+
+        .attribution {display: none;}
+
+  }
