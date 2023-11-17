@@ -284,6 +284,7 @@ transition: background-color 0.3s ease-in-out;
   }
 
 
+
 /******************************************
   CCS media queries  width 912PX
   ********************************************/
@@ -293,7 +294,15 @@ transition: background-color 0.3s ease-in-out;
     .mainComponent-B {width: 35%;}
   }
 
+/******************************************
+  CCS media queries  width 896PX
+  ********************************************/
+  @media screen and (max-width:896px){
+    .mainComponent {
+        width: 72%;
+    }
 
+}
 
 /******************************************
   CCS media queries  width 820PX
@@ -312,6 +321,16 @@ transition: background-color 0.3s ease-in-out;
     .mainComponent-B {width: 40%;}
 
   }
+
+/******************************************
+  CCS media queries  width 667PX
+  ********************************************/
+  @media screen and (max-width:667px){
+.mainComponent {width: 97%;}
+
+  }
+
+
 
 
 
