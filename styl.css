@@ -333,7 +333,7 @@ transition: background-color 0.3s ease-in-out;
   @media screen and (max-width:736px){
 
     .mainComponent {width: 91%;}
-    /* .mainComponent-B {width: 40%;} */
+    .mainComponent-B {width: 41%;}
 
   }
 
