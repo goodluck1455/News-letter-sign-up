@@ -322,6 +322,21 @@ transition: background-color 0.3s ease-in-out;
 
   }
 
+
+
+
+
+
+  /******************************************
+  CCS media queries  width 768PX
+  ********************************************/
+  @media screen and (max-width:736px){
+
+    .mainComponent {width: 91%;}
+    /* .mainComponent-B {width: 40%;} */
+
+  }
+
 /******************************************
   CCS media queries  width 667PX
   ********************************************/
